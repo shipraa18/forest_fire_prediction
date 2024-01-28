@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forest Fire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <p>NatureNURTURERS</p>
+        <div class="toggle"></div>
+      </header>
+      <video src="photos/forest fire.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Our Motive</h2>
+        <h3>Keep an eye on forests</h3>
+        <p>
+          "We believe in protecting everything that is around us because in the end Nature is all that we have and all that we will ever need"
+        </p>
+        <a href="about.html" id="explore">Explore</a>
+      </div>
+      <section class="read-more">
+        <div class="read-more-content" id="additional-info">
+          <h2>forestfire prediction and detection</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos,
+            explicabo assumenda! Totam aperiam inventore reiciendis doloremque,
+            mollitia qui officia ea odit voluptas, quam fuga possimus omnis quae
+            similique non aspernatur repellendus quo, debitis quibusdam nemo
+            cupiditate at optio. Sint asperiores facere similique autem debitis
+            veniam. Similique quae vitae nobis maiores.
+          </p>
+        </div>
+      </section>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="photos/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="photos/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="photos/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showCase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showCase.classList.toggle("active");
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const readMoreButton = document.getElementsByClassName("read-more-button");
+        const additionalInfo = document.getElementById("additional-info");
+
+        explore.addEventListener("click", function () {
+          additionalInfo.style.display =
+            additionalInfo.style.display === "none" ? "block" : "none";
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+*{
+          margin: 0px;
+          padding: 0px;
+          font-family: sans-serif;
+
+}
+/* nav {
+          background-color: #333;
+      }
+      
+      ul {
+          list-style-type: none; 
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+      }
+      
+      li {
+          float: left;
+      }
+      
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      
+     
+      li a:hover {
+          background-color: #555;
+      } */
+.heading{
+          height: 100px;
+          margin-top: 50px;
+          margin-bottom: -50px;
+          font-weight: 50;
+          font-size: 70px;
+          background-color: #a2c68cb6;
+}
+body{
+          text-align: center;
+          /* background: rgb(171, 228, 181); */
+          background-image: url(photos/Bg-Image-3-fotor-202401271619.jpg);
+          
+}
+background-image{
+          filter: blur(8px);
+}
+.container
+{         
+          display: flex;
+          justify-content: center;
+          height: 100vh;
+          align-items: center;
+
+}
+.card
+{
+          height: 430px;
+          margin: 50px;
+          box-shadow: 5px 5px 20px black;
+          overflow: hidden;
+}
+.special{
+          height: 300px;
+          width: 350px;
+          border-radius: 3px;
+}
+.intro{
+          height: 120px;
+          width: 350px;
+          padding: 6px;
+          box-sizing: border-box;
+          position: absolute;
+          background: rgb(27,27,27,0.5);
+          color: white;
+          bottom: 85px;
+          transition: 0.5s;
+
+
+}
+h1{
+          margin: 10px;
+          font-size: 40px;
+}
+p{
+          font-size: 20px;
+          margin: 20px;
+          visibility: hidden;
+          opacity: 0;
+}
+span{
+          font-weight: bold;    
+}
+.card:hover{
+          cursor: pointer;
+}
+
+.card:hover .intro{
+          height: 220px;
+          bottom: 130px;
+          background: black;
+}
+
+.card:hover p{
+          opacity: 1;
+          visibility: visible;
+
+}
+.card:hover img{
+          transform: scale(1,1) rotate(3deg);
+
+}
